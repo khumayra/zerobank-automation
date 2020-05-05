@@ -51,6 +51,7 @@ Feature: Pay Bills events
     And user enters date "2020-05-06"
     And user clicks on Pay button
     Then user verifies that Please fill out this field message. should be displayed under amount field
+  # List and check the size - happy path
 
   Scenario: Entering alphabetical characters into date field - Positive
     Given user is on "Pay Saved Payee" tab

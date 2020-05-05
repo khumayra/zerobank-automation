@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="419841f0-2c6c-455b-a354-7f6266c46e8d" name="Default Changelist" comment="" />
+    <list default="true" id="419841f0-2c6c-455b-a354-7f6266c46e8d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/pages/AccountSummaryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/pages/AccountSummaryPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/runners/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/runners/CukesRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/stepdefnitions/AccountActivityNavigationStepDefinitions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/stepdefnitions/AccountSummaryStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/stepdefnitions/AccountSummaryStepDefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/AccountActivityNavigation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AccountActivityNavigation.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/PayBills.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/PayBills.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber1.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/default-report/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-report/report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/pages/AccountSummaryPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/zerobank/pages/AccountSummaryPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/pages/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/zerobank/pages/BasePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/stepdefnitions/AccountActivityNavigationStepDefinitions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/AccountActivityNavigation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/AccountActivityNavigation.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/PayBills.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/PayBills.feature" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +30,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1bI0mHLcGiEeeDTLBEidAsCbe23" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
@@ -25,7 +44,66 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Fall2019OnlineCucumberSelenium" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Cucumber Java.Feature: AccountActivityNavigation">
+    <configuration name="Feature: AccountActivityNavigation" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/AccountActivityNavigation.feature" />
+      <option name="GLUE" value="com.zerobank.stepdefnitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="zerobank-automation" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: AccountActivityNavigation" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Entering alphabetical characters into amount field - Positive" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/PayBills.feature" />
+      <option name="GLUE" value="com.zerobank.stepdefnitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="zerobank-automation" />
+      <option name="NAME_FILTER" value="^Entering alphabetical characters into amount field \- Positive$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Entering alphabetical characters into amount field \- Positive$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Entering alphabetical characters into amount field - Positive" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: &lt;Account_Type&gt; redirect" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/AccountActivityNavigation.feature" />
+      <option name="GLUE" value="com.zerobank.stepdefnitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="zerobank-automation" />
+      <option name="NAME_FILTER" value="^.* redirect$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^.* redirect$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: &lt;Account_Type&gt; redirect" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CukesRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="zerobank-automation" />
       <extension name="coverage">
@@ -43,7 +121,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Feature: AccountActivityNavigation" />
+        <item itemvalue="Cucumber Java.Scenario: &lt;Account_Type&gt; redirect" />
         <item itemvalue="JUnit.CukesRunner" />
+        <item itemvalue="Cucumber Java.Scenario: Entering alphabetical characters into amount field - Positive" />
       </list>
     </recent_temporary>
   </component>
@@ -73,25 +154,25 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588392204851" />
-    <state width="1877" height="294" key="GridCell.Tab.0.bottom" timestamp="1588603920827">
+    <state width="1877" height="554" key="GridCell.Tab.0.bottom" timestamp="1588675778558">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="294" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588603920827" />
+    <state width="1877" height="554" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588675778558" />
     <state width="1877" height="453" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1588385723848" />
-    <state width="1877" height="294" key="GridCell.Tab.0.center" timestamp="1588603920827">
+    <state width="1877" height="554" key="GridCell.Tab.0.center" timestamp="1588675778558">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="294" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588603920827" />
+    <state width="1877" height="554" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588675778558" />
     <state width="1877" height="453" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1588385723848" />
-    <state width="1877" height="294" key="GridCell.Tab.0.left" timestamp="1588603920827">
+    <state width="1877" height="554" key="GridCell.Tab.0.left" timestamp="1588675778558">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="294" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588603920827" />
+    <state width="1877" height="554" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588675778558" />
     <state width="1877" height="453" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1588385723848" />
-    <state width="1877" height="294" key="GridCell.Tab.0.right" timestamp="1588603920827">
+    <state width="1877" height="554" key="GridCell.Tab.0.right" timestamp="1588675778558">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="294" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588603920827" />
+    <state width="1877" height="554" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588675778558" />
     <state width="1877" height="453" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1588385723848" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1588384180504">
       <screen x="0" y="0" width="1920" height="1040" />

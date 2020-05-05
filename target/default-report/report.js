@@ -9,6 +9,60 @@ formatter.feature({
     }
   ]
 });
+formatter.scenarioOutline({
+  "name": "\u003cAccount_Type\u003e redirect",
+  "description": "",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "name": "the user clicks on \"\u003cAccount_Type\u003e\" link on the Account Summary page",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "the user verifies \"Account Activity\" page is displayed",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "Account drop down default option should be \"\u003cAccount_Type\u003e\"",
+  "keyword": "And "
+});
+formatter.examples({
+  "name": "",
+  "description": "",
+  "keyword": "Examples",
+  "rows": [
+    {
+      "cells": [
+        "Account Type"
+      ]
+    },
+    {
+      "cells": [
+        "Savings"
+      ]
+    },
+    {
+      "cells": [
+        "Brokerage"
+      ]
+    },
+    {
+      "cells": [
+        "Checking"
+      ]
+    },
+    {
+      "cells": [
+        "Credit Card"
+      ]
+    },
+    {
+      "cells": [
+        "Loan"
+      ]
+    }
+  ]
+});
 formatter.background({
   "name": "open login page",
   "description": "",
@@ -45,9 +99,9 @@ formatter.result({
   "status": "skipped"
 });
 formatter.scenario({
-  "name": "Savings account redirect",
+  "name": "\u003cAccount_Type\u003e redirect",
   "description": "",
-  "keyword": "Scenario",
+  "keyword": "Scenario Outline",
   "tags": [
     {
       "name": "@account_activity_navigation"
@@ -55,7 +109,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "name": "the user clicks on Savings link on the Account Summary page",
+  "name": "the user clicks on \"\u003cAccount_Type\u003e\" link on the Account Summary page",
   "keyword": "When "
 });
 formatter.match({});
@@ -63,7 +117,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "the Account Activity page should be displayed",
+  "name": "the user verifies \"Account Activity\" page is displayed",
   "keyword": "Then "
 });
 formatter.match({});
@@ -71,7 +125,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "Account drop down should have Savings selected",
+  "name": "Account drop down default option should be \"\u003cAccount_Type\u003e\"",
   "keyword": "And "
 });
 formatter.match({});
@@ -117,9 +171,9 @@ formatter.result({
   "status": "skipped"
 });
 formatter.scenario({
-  "name": "Brokerage account redirect",
+  "name": "\u003cAccount_Type\u003e redirect",
   "description": "",
-  "keyword": "Scenario",
+  "keyword": "Scenario Outline",
   "tags": [
     {
       "name": "@account_activity_navigation"
@@ -127,7 +181,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "name": "the user clicks on Brokerage link on the Account Summary page",
+  "name": "the user clicks on \"\u003cAccount_Type\u003e\" link on the Account Summary page",
   "keyword": "When "
 });
 formatter.match({});
@@ -135,7 +189,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "the Account Activity page should be displayed",
+  "name": "the user verifies \"Account Activity\" page is displayed",
   "keyword": "Then "
 });
 formatter.match({});
@@ -143,7 +197,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "Account drop down should have Brokerage selected",
+  "name": "Account drop down default option should be \"\u003cAccount_Type\u003e\"",
   "keyword": "And "
 });
 formatter.match({});
@@ -189,9 +243,9 @@ formatter.result({
   "status": "skipped"
 });
 formatter.scenario({
-  "name": "Checking account redirect",
+  "name": "\u003cAccount_Type\u003e redirect",
   "description": "",
-  "keyword": "Scenario",
+  "keyword": "Scenario Outline",
   "tags": [
     {
       "name": "@account_activity_navigation"
@@ -199,7 +253,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "name": "the user clicks on Checking link on the Account Summary page",
+  "name": "the user clicks on \"\u003cAccount_Type\u003e\" link on the Account Summary page",
   "keyword": "When "
 });
 formatter.match({});
@@ -207,7 +261,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "the Account Activity page should be displayed",
+  "name": "the user verifies \"Account Activity\" page is displayed",
   "keyword": "Then "
 });
 formatter.match({});
@@ -215,7 +269,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "Account drop down should have Checking selected",
+  "name": "Account drop down default option should be \"\u003cAccount_Type\u003e\"",
   "keyword": "And "
 });
 formatter.match({});
@@ -261,9 +315,9 @@ formatter.result({
   "status": "skipped"
 });
 formatter.scenario({
-  "name": "Credit Card account redirect",
+  "name": "\u003cAccount_Type\u003e redirect",
   "description": "",
-  "keyword": "Scenario",
+  "keyword": "Scenario Outline",
   "tags": [
     {
       "name": "@account_activity_navigation"
@@ -271,7 +325,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "name": "the user clicks on Credit card link on the Account Summary page",
+  "name": "the user clicks on \"\u003cAccount_Type\u003e\" link on the Account Summary page",
   "keyword": "When "
 });
 formatter.match({});
@@ -279,7 +333,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "the Account Activity page should be displayed",
+  "name": "the user verifies \"Account Activity\" page is displayed",
   "keyword": "Then "
 });
 formatter.match({});
@@ -287,7 +341,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "Account drop down should have Credit Card selected",
+  "name": "Account drop down default option should be \"\u003cAccount_Type\u003e\"",
   "keyword": "And "
 });
 formatter.match({});
@@ -333,9 +387,9 @@ formatter.result({
   "status": "skipped"
 });
 formatter.scenario({
-  "name": "Loan account redirect",
+  "name": "\u003cAccount_Type\u003e redirect",
   "description": "",
-  "keyword": "Scenario",
+  "keyword": "Scenario Outline",
   "tags": [
     {
       "name": "@account_activity_navigation"
@@ -343,7 +397,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "name": "the user clicks on Loan link on the Account Summary page",
+  "name": "the user clicks on \"\u003cAccount_Type\u003e\" link on the Account Summary page",
   "keyword": "When "
 });
 formatter.match({});
@@ -351,7 +405,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "the Account Activity page should be displayed",
+  "name": "the user verifies \"Account Activity\" page is displayed",
   "keyword": "Then "
 });
 formatter.match({});
@@ -359,7 +413,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "Account drop down should have Loan selected",
+  "name": "Account drop down default option should be \"\u003cAccount_Type\u003e\"",
   "keyword": "And "
 });
 formatter.match({});
