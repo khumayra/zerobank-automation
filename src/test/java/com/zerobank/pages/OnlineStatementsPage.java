@@ -3,10 +3,15 @@ package com.zerobank.pages;
 import com.zerobank.utilities.BrowserUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.CapabilityType;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.io.File;
+import java.util.HashMap;
 import java.util.List;
 
 public class OnlineStatementsPage extends BasePage {
@@ -42,6 +47,7 @@ public class OnlineStatementsPage extends BasePage {
      * @return OnlineStatementPage object
      */
     public void clickOnStatement(String statementName) {
+
         String xpath = "//a[text()='"+statementName+"']";
         WebElement link = driver.findElement(By.xpath(xpath));
         fileName = getDownloadedFileName(link);
@@ -55,6 +61,7 @@ public class OnlineStatementsPage extends BasePage {
             filePath = System.getProperty("user.home") + "\\Downloads\\" + fileName;
             System.out.println("filePath = " + filePath);
         }
+
         File file = new File(filePath);
 
         int timeout = 0;

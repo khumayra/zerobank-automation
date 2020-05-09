@@ -152,6 +152,7 @@ public class PayBillsPage extends BasePage {
     }
 
     public List<String> getAllCurrencyOptions(){
+        wait.until(ExpectedConditions.visibilityOf(currencyOptions));
         select = new Select(currencyOptions);
         return BrowserUtils.getTextFromWebElements(select.getOptions());
     }
