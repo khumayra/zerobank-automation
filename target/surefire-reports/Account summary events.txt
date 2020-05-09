@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: Account summary events
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 77.768 s - in Account summary events

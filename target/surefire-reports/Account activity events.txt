@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: Account activity events
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 84.057 s - in Account activity events
