@@ -1,45 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="419841f0-2c6c-455b-a354-7f6266c46e8d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/default-report/embedded0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/default-report/formatter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/default-report/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/default-report/jquery-3.4.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/default-report/report.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/default-report/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/pages/AccountActivityPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/pages/AccountSummaryPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/pages/BasePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/pages/LoginPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/pages/OnlineStatementsPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/pages/PayBillsPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/runners/CukesRunner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/stepdefnitions/AccountActivityStepDefinitions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/stepdefnitions/AccountSummaryStepDefinitions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/stepdefnitions/Hooks.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/stepdefnitions/LoginStepDefinitions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/stepdefnitions/OnlineStatementsStepDefinitions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/stepdefnitions/PayBillsStepDefinitions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/utilities/BrowserUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/utilities/ConfigurationReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/utilities/Driver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/AccountActivity.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/AccountActivityNavigation.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/AccountSummary.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/AddNewPayee.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/FindTransactions.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Login.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/PayBills.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/PurchaseForeignCurrency.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/StatementsAndDocuments.feature" beforeDir="false" />
-    </list>
+    <list default="true" id="419841f0-2c6c-455b-a354-7f6266c46e8d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
