@@ -8,9 +8,9 @@ import org.junit.runner.RunWith;
 @CucumberOptions (
         glue = "com/zerobank/stepdefnitions",
         features = "src/test/resources/features",
-        dryRun = false,
+        dryRun = true,
         strict = false,
-        tags = "@account_activity_navigation",
+        tags = "@find_transactions_in_account_activity",
         plugin = {
                 "html:target/default-report",
                 "json:target/cucumber1.json",

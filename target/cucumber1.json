@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "line": 3,
+        "line": 4,
         "name": "open login page",
         "description": "",
         "type": "background",
@@ -11,10 +11,10 @@
         "steps": [
           {
             "result": {
-              "duration": 996700,
+              "duration": 1992800,
               "status": "skipped"
             },
-            "line": 4,
+            "line": 5,
             "name": "user is on login page",
             "match": {
               "location": "com.zerobank.stepdefnitions.LoginStepDefinitions.user_on_login_page()"
@@ -23,10 +23,10 @@
           },
           {
             "result": {
-              "duration": 1025900,
+              "duration": 997000,
               "status": "skipped"
             },
-            "line": 5,
+            "line": 6,
             "name": "user logs in with valid credentials",
             "match": {
               "location": "com.zerobank.stepdefnitions.LoginStepDefinitions.user_logs_in_with_valid_credentials()"
@@ -35,58 +35,146 @@
           },
           {
             "result": {
+              "duration": 998200,
               "status": "skipped"
             },
-            "line": 6,
-            "name": "user navigates to \"Account Summary\" page",
+            "line": 7,
+            "name": "user navigates to \"Account Activity\" page",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Account Summary\"",
+                  "val": "\"Account Activity\"",
                   "offset": 18
                 }
               ],
               "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.user_navigates_to_page(java.lang.String)"
             },
             "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "the user accesses the \"Find Transactions\" tab",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Find Transactions\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.the_user_accesses_the_tab(java.lang.String)"
+            },
+            "keyword": "And "
           }
         ]
       },
       {
-        "start_timestamp": "2020-05-05T10:40:42.242Z",
-        "line": 14,
-        "name": "\u003cAccount_Type\u003e redirect",
+        "start_timestamp": "2020-05-08T13:39:24.828Z",
+        "line": 10,
+        "name": "Search date range",
         "description": "",
-        "id": "navigating-to-specific-accounts-in-accounts-activity;\u003caccount-type\u003e-redirect;;2",
+        "id": "find-transactions-in-account-activity;search-date-range",
         "after": [
+          {
+            "result": {
+              "duration": 998400,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefnitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "the user enters date range from “abc” to “abc”",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "clicks search",
+            "match": {
+              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.clicks_search()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "results table should only show transactions dates between “anbc” to “abc”",
+            "match": {},
+            "keyword": "Then "
+          },
           {
             "result": {
               "duration": 997400,
               "status": "skipped"
             },
+            "line": 14,
+            "name": "the results should be sorted by most recent date",
             "match": {
-              "location": "com.zerobank.stepdefnitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
+              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.the_results_should_be_sorted_by_most_recent_date(io.cucumber.datatable.DataTable)"
             },
-            "line": 9,
-            "name": "the user clicks on \"\u003cAccount_Type\u003e\" link on the Account Summary page",
-            "match": {},
-            "keyword": "When "
+            "rows": [
+              {
+                "cells": [
+                  "2012-09-06"
+                ]
+              },
+              {
+                "cells": [
+                  "2012-09-05"
+                ]
+              },
+              {
+                "cells": [
+                  "2012-09-01"
+                ]
+              }
+            ],
+            "keyword": "And "
           },
           {
             "result": {
               "status": "undefined"
             },
-            "line": 10,
-            "name": "the user verifies \"Account Activity\" page is displayed",
+            "line": 19,
+            "name": "the user enters date range from “abc” to “abc”",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 997800,
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "clicks search",
+            "match": {
+              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.clicks_search()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 21,
+            "name": "results table should only show transactions dates between “abc” to “abc”",
             "match": {},
             "keyword": "Then "
           },
@@ -94,20 +182,20 @@
             "result": {
               "status": "undefined"
             },
-            "line": 11,
-            "name": "Account drop down default option should be \"\u003cAccount_Type\u003e\"",
+            "line": 22,
+            "name": "the results table should only NOT contain transactions dated “abc”",
             "match": {},
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@account_activity_navigation"
+            "name": "@find_transactions_in_account_activity"
           }
         ]
       },
       {
-        "line": 3,
+        "line": 4,
         "name": "open login page",
         "description": "",
         "type": "background",
@@ -117,7 +205,7 @@
             "result": {
               "status": "skipped"
             },
-            "line": 4,
+            "line": 5,
             "name": "user is on login page",
             "match": {
               "location": "com.zerobank.stepdefnitions.LoginStepDefinitions.user_on_login_page()"
@@ -126,10 +214,9 @@
           },
           {
             "result": {
-              "duration": 996600,
               "status": "skipped"
             },
-            "line": 5,
+            "line": 6,
             "name": "user logs in with valid credentials",
             "match": {
               "location": "com.zerobank.stepdefnitions.LoginStepDefinitions.user_logs_in_with_valid_credentials()"
@@ -140,27 +227,44 @@
             "result": {
               "status": "skipped"
             },
-            "line": 6,
-            "name": "user navigates to \"Account Summary\" page",
+            "line": 7,
+            "name": "user navigates to \"Account Activity\" page",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Account Summary\"",
+                  "val": "\"Account Activity\"",
                   "offset": 18
                 }
               ],
               "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.user_navigates_to_page(java.lang.String)"
             },
             "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "the user accesses the \"Find Transactions\" tab",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Find Transactions\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.the_user_accesses_the_tab(java.lang.String)"
+            },
+            "keyword": "And "
           }
         ]
       },
       {
-        "start_timestamp": "2020-05-05T10:40:42.310Z",
-        "line": 15,
-        "name": "\u003cAccount_Type\u003e redirect",
+        "start_timestamp": "2020-05-08T13:39:24.918Z",
+        "line": 24,
+        "name": "Search description",
         "description": "",
-        "id": "navigating-to-specific-accounts-in-accounts-activity;\u003caccount-type\u003e-redirect;;3",
+        "id": "find-transactions-in-account-activity;search-description",
         "after": [
           {
             "result": {
@@ -172,44 +276,261 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 997700,
+              "status": "skipped"
             },
-            "line": 9,
-            "name": "the user clicks on \"\u003cAccount_Type\u003e\" link on the Account Summary page",
-            "match": {},
+            "line": 25,
+            "name": "the user enters description “ONLINE”",
+            "match": {
+              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.the_user_enters_description_ONLINE()"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
-            "line": 10,
-            "name": "the user verifies \"Account Activity\" page is displayed",
-            "match": {},
+            "line": 26,
+            "name": "clicks search",
+            "match": {
+              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.clicks_search()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "results table should only show descriptions containing “ONLINE”",
+            "match": {
+              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.results_table_should_only_show_descriptions_containing_ONLINE()"
+            },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
-            "line": 11,
-            "name": "Account drop down default option should be \"\u003cAccount_Type\u003e\"",
-            "match": {},
+            "line": 28,
+            "name": "the user enters description “OFFICE”",
+            "match": {
+              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.the_user_enters_description_OFFICE()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2991900,
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "clicks search",
+            "match": {
+              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.clicks_search()"
+            },
             "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 997800,
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "results table should only show descriptions containing “OFFICE”",
+            "match": {
+              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.results_table_should_only_show_descriptions_containing_OFFICE()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "results table should NOT show descriptions containing “ONLINE”",
+            "match": {
+              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.results_table_should_NOT_show_descriptions_containing_ONLINE()"
+            },
+            "keyword": "But "
           }
         ],
         "tags": [
           {
-            "name": "@account_activity_navigation"
+            "name": "@find_transactions_in_account_activity"
           }
         ]
       },
       {
-        "line": 3,
+        "line": 4,
+        "name": "open login page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 997900,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user is on login page",
+            "match": {
+              "location": "com.zerobank.stepdefnitions.LoginStepDefinitions.user_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 998200,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user logs in with valid credentials",
+            "match": {
+              "location": "com.zerobank.stepdefnitions.LoginStepDefinitions.user_logs_in_with_valid_credentials()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user navigates to \"Account Activity\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Account Activity\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.user_navigates_to_page(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 997100,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "the user accesses the \"Find Transactions\" tab",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Find Transactions\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.the_user_accesses_the_tab(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-08T13:39:24.939Z",
+        "line": 33,
+        "name": "Search description case insensitive",
+        "description": "",
+        "id": "find-transactions-in-account-activity;search-description-case-insensitive",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefnitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 997400,
+              "status": "skipped"
+            },
+            "line": 34,
+            "name": "the user enters description “ONLINE”",
+            "match": {
+              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.the_user_enters_description_ONLINE()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 998300,
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "clicks search",
+            "match": {
+              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.clicks_search()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "results table should only show descriptions containing “ONLINE”",
+            "match": {
+              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.results_table_should_only_show_descriptions_containing_ONLINE()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 37,
+            "name": "the user enters description “online”",
+            "match": {
+              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.the_user_enters_description_online()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 998300,
+              "status": "skipped"
+            },
+            "line": 38,
+            "name": "clicks search",
+            "match": {
+              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.clicks_search()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 996900,
+              "status": "skipped"
+            },
+            "line": 39,
+            "name": "results table should only show descriptions containing “ONLINE”",
+            "match": {
+              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.results_table_should_only_show_descriptions_containing_ONLINE()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@find_transactions_in_account_activity"
+          }
+        ]
+      },
+      {
+        "line": 4,
         "name": "open login page",
         "description": "",
         "type": "background",
@@ -220,7 +541,7 @@
               "duration": 997800,
               "status": "skipped"
             },
-            "line": 4,
+            "line": 5,
             "name": "user is on login page",
             "match": {
               "location": "com.zerobank.stepdefnitions.LoginStepDefinitions.user_on_login_page()"
@@ -231,7 +552,7 @@
             "result": {
               "status": "skipped"
             },
-            "line": 5,
+            "line": 6,
             "name": "user logs in with valid credentials",
             "match": {
               "location": "com.zerobank.stepdefnitions.LoginStepDefinitions.user_logs_in_with_valid_credentials()"
@@ -240,30 +561,47 @@
           },
           {
             "result": {
-              "duration": 996500,
+              "duration": 996600,
               "status": "skipped"
             },
-            "line": 6,
-            "name": "user navigates to \"Account Summary\" page",
+            "line": 7,
+            "name": "user navigates to \"Account Activity\" page",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Account Summary\"",
+                  "val": "\"Account Activity\"",
                   "offset": 18
                 }
               ],
               "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.user_navigates_to_page(java.lang.String)"
             },
             "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "the user accesses the \"Find Transactions\" tab",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Find Transactions\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.the_user_accesses_the_tab(java.lang.String)"
+            },
+            "keyword": "And "
           }
         ]
       },
       {
-        "start_timestamp": "2020-05-05T10:40:42.331Z",
-        "line": 16,
-        "name": "\u003cAccount_Type\u003e redirect",
+        "start_timestamp": "2020-05-08T13:39:24.962Z",
+        "line": 41,
+        "name": "Type",
         "description": "",
-        "id": "navigating-to-specific-accounts-in-accounts-activity;\u003caccount-type\u003e-redirect;;4",
+        "id": "find-transactions-in-account-activity;type",
         "after": [
           {
             "result": {
@@ -275,257 +613,128 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 2993000,
+              "status": "skipped"
             },
-            "line": 9,
-            "name": "the user clicks on \"\u003cAccount_Type\u003e\" link on the Account Summary page",
-            "match": {},
-            "keyword": "When "
+            "line": 42,
+            "name": "clicks search",
+            "match": {
+              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.clicks_search()"
+            },
+            "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
-            "line": 10,
-            "name": "the user verifies \"Account Activity\" page is displayed",
-            "match": {},
+            "line": 43,
+            "name": "results table should show at least one result under Deposit",
+            "match": {
+              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.results_table_should_show_at_least_one_result_under_Deposit()"
+            },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "undefined"
-            },
-            "line": 11,
-            "name": "Account drop down default option should be \"\u003cAccount_Type\u003e\"",
-            "match": {},
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@account_activity_navigation"
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "open login page",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 997200,
+              "duration": 997500,
               "status": "skipped"
             },
-            "line": 4,
-            "name": "user is on login page",
+            "line": 44,
+            "name": "results table should show at least one result under Withdrawal",
             "match": {
-              "location": "com.zerobank.stepdefnitions.LoginStepDefinitions.user_on_login_page()"
+              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.results_table_should_show_at_least_one_result_under_Withdrawal()"
             },
-            "keyword": "Given "
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 998000,
               "status": "skipped"
             },
-            "line": 5,
-            "name": "user logs in with valid credentials",
+            "line": 45,
+            "name": "user selects type “Deposit”",
             "match": {
-              "location": "com.zerobank.stepdefnitions.LoginStepDefinitions.user_logs_in_with_valid_credentials()"
+              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.user_selects_type_Deposit()"
             },
-            "keyword": "And "
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 997100,
+              "status": "skipped"
+            },
+            "line": 46,
+            "name": "results table should show at least one result under Deposit",
+            "match": {
+              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.results_table_should_show_at_least_one_result_under_Deposit()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 47,
+            "name": "results table should show no result under Withdrawal",
+            "match": {
+              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.results_table_should_show_no_result_under_Withdrawal()"
+            },
+            "keyword": "But "
           },
           {
             "result": {
               "duration": 997000,
               "status": "skipped"
             },
-            "line": 6,
-            "name": "user navigates to \"Account Summary\" page",
+            "line": 48,
+            "name": "user selects type “Withdrawal”",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Account Summary\"",
-                  "offset": 18
-                }
-              ],
-              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.user_navigates_to_page(java.lang.String)"
+              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.user_selects_type_Withdrawal()"
             },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-05-05T10:40:42.342Z",
-        "line": 17,
-        "name": "\u003cAccount_Type\u003e redirect",
-        "description": "",
-        "id": "navigating-to-specific-accounts-in-accounts-activity;\u003caccount-type\u003e-redirect;;5",
-        "after": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "match": {
-              "location": "com.zerobank.stepdefnitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 9,
-            "name": "the user clicks on \"\u003cAccount_Type\u003e\" link on the Account Summary page",
-            "match": {},
             "keyword": "When "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
-            "line": 10,
-            "name": "the user verifies \"Account Activity\" page is displayed",
-            "match": {},
+            "line": 49,
+            "name": "results table should show at least one result under Withdrawal",
+            "match": {
+              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.results_table_should_show_at_least_one_result_under_Withdrawal()"
+            },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 997500,
+              "status": "skipped"
             },
-            "line": 11,
-            "name": "Account drop down default option should be \"\u003cAccount_Type\u003e\"",
-            "match": {},
-            "keyword": "And "
+            "line": 50,
+            "name": "results table should show no result under Deposit",
+            "match": {
+              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.results_table_should_show_no_result_under_Deposit()"
+            },
+            "keyword": "But "
           }
         ],
         "tags": [
           {
-            "name": "@account_activity_navigation"
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "open login page",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 4,
-            "name": "user is on login page",
-            "match": {
-              "location": "com.zerobank.stepdefnitions.LoginStepDefinitions.user_on_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 996500,
-              "status": "skipped"
-            },
-            "line": 5,
-            "name": "user logs in with valid credentials",
-            "match": {
-              "location": "com.zerobank.stepdefnitions.LoginStepDefinitions.user_logs_in_with_valid_credentials()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 6,
-            "name": "user navigates to \"Account Summary\" page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Account Summary\"",
-                  "offset": 18
-                }
-              ],
-              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.user_navigates_to_page(java.lang.String)"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-05-05T10:40:42.353Z",
-        "line": 18,
-        "name": "\u003cAccount_Type\u003e redirect",
-        "description": "",
-        "id": "navigating-to-specific-accounts-in-accounts-activity;\u003caccount-type\u003e-redirect;;6",
-        "after": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "match": {
-              "location": "com.zerobank.stepdefnitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 9,
-            "name": "the user clicks on \"\u003cAccount_Type\u003e\" link on the Account Summary page",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 10,
-            "name": "the user verifies \"Account Activity\" page is displayed",
-            "match": {},
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 11,
-            "name": "Account drop down default option should be \"\u003cAccount_Type\u003e\"",
-            "match": {},
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@account_activity_navigation"
+            "name": "@find_transactions_in_account_activity"
           }
         ]
       }
     ],
-    "name": "Navigating to specific accounts in Accounts Activity",
+    "name": "Find Transactions in Account Activity",
     "description": "",
-    "id": "navigating-to-specific-accounts-in-accounts-activity",
+    "id": "find-transactions-in-account-activity",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/AccountActivityNavigation.feature",
+    "uri": "file:src/test/resources/features/FindTransactions.feature",
     "tags": [
       {
-        "name": "@account_activity_navigation",
+        "name": "@find_transactions_in_account_activity",
         "type": "Tag",
         "location": {
           "line": 1,

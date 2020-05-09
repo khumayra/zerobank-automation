@@ -3,19 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="419841f0-2c6c-455b-a354-7f6266c46e8d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/pages/AccountSummaryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/pages/AccountSummaryPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/pages/AccountActivityPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/pages/AccountActivityPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/runners/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/runners/CukesRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/stepdefnitions/AccountActivityNavigationStepDefinitions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/stepdefnitions/AccountSummaryStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/stepdefnitions/AccountSummaryStepDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/AccountActivityNavigation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AccountActivityNavigation.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/PayBills.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/PayBills.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/stepdefnitions/AccountActivityStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/stepdefnitions/AccountActivityStepDefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/utilities/BrowserUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/utilities/BrowserUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber1.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/default-report/embedded0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/default-report/embedded1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/default-report/embedded2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/default-report/embedded3.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/default-report/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-report/report.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/pages/AccountSummaryPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/zerobank/pages/AccountSummaryPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/pages/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/zerobank/pages/BasePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/stepdefnitions/AccountActivityNavigationStepDefinitions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/AccountActivityNavigation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/AccountActivityNavigation.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/PayBills.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/PayBills.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/zerobank-automation.kotlin_module" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +25,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Substep Feature" />
         <option value="Class" />
+        <option value="Substep Feature" />
       </list>
     </option>
   </component>
@@ -44,15 +44,15 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Fall2019OnlineCucumberSelenium" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: AccountActivityNavigation">
-    <configuration name="Feature: AccountActivityNavigation" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.Feature: FindTransactions">
+    <configuration name="Feature: FindTransactions" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/AccountActivityNavigation.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/FindTransactions.feature" />
       <option name="GLUE" value="com.zerobank.stepdefnitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="zerobank-automation" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: AccountActivityNavigation" />
+      <option name="SUGGESTED_NAME" value="Feature: FindTransactions" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -64,15 +64,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Entering alphabetical characters into amount field - Positive" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Search description &quot;OFFICE&quot; - Negative" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/PayBills.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/FindTransactions.feature" />
       <option name="GLUE" value="com.zerobank.stepdefnitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="zerobank-automation" />
-      <option name="NAME_FILTER" value="^Entering alphabetical characters into amount field \- Positive$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Entering alphabetical characters into amount field \- Positive$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Entering alphabetical characters into amount field - Positive" />
+      <option name="NAME_FILTER" value="^Search description \&quot;OFFICE\&quot; \- Negative$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Search description \&quot;OFFICE\&quot; \- Negative$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Search description &quot;OFFICE&quot; - Negative" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -84,15 +84,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: &lt;Account_Type&gt; redirect" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Search description &quot;ONLINE&quot; - Positive" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/AccountActivityNavigation.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/FindTransactions.feature" />
       <option name="GLUE" value="com.zerobank.stepdefnitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="zerobank-automation" />
-      <option name="NAME_FILTER" value="^.* redirect$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^.* redirect$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: &lt;Account_Type&gt; redirect" />
+      <option name="NAME_FILTER" value="^Search description \&quot;ONLINE\&quot; \- Positive$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Search description \&quot;ONLINE\&quot; \- Positive$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Search description &quot;ONLINE&quot; - Positive" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -104,27 +104,53 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CukesRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Search description case insensitive" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/FindTransactions.feature" />
+      <option name="GLUE" value="com.zerobank.stepdefnitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="zerobank-automation" />
+      <option name="NAME_FILTER" value="^Search description case insensitive$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Search description case insensitive$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Search description case insensitive" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zerobank.stepdefnitions.*" />
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.zerobank.runners" />
-      <option name="MAIN_CLASS_NAME" value="com.zerobank.runners.CukesRunner" />
-      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Type" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/FindTransactions.feature" />
+      <option name="GLUE" value="com.zerobank.stepdefnitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="zerobank-automation" />
+      <option name="NAME_FILTER" value="^Type$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Type$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Type" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Feature: AccountActivityNavigation" />
-        <item itemvalue="Cucumber Java.Scenario: &lt;Account_Type&gt; redirect" />
-        <item itemvalue="JUnit.CukesRunner" />
-        <item itemvalue="Cucumber Java.Scenario: Entering alphabetical characters into amount field - Positive" />
+        <item itemvalue="Cucumber Java.Feature: FindTransactions" />
+        <item itemvalue="Cucumber Java.Scenario: Type" />
+        <item itemvalue="Cucumber Java.Scenario: Search description &quot;OFFICE&quot; - Negative" />
+        <item itemvalue="Cucumber Java.Scenario: Search description case insensitive" />
+        <item itemvalue="Cucumber Java.Scenario: Search description &quot;ONLINE&quot; - Positive" />
       </list>
     </recent_temporary>
   </component>
@@ -142,6 +168,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="586" y="198" key="#Inspections" timestamp="1588972081774">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="586" y="198" key="#Inspections/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588972081774" />
     <state x="87" y="100" width="1720" height="840" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1588421589429">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -154,29 +184,66 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588392204851" />
-    <state width="1877" height="554" key="GridCell.Tab.0.bottom" timestamp="1588675778558">
+    <state width="1877" height="304" key="GridCell.Tab.0.bottom" timestamp="1588993922967">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="554" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588675778558" />
+    <state width="1877" height="304" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588993922967" />
     <state width="1877" height="453" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1588385723848" />
-    <state width="1877" height="554" key="GridCell.Tab.0.center" timestamp="1588675778558">
+    <state width="1877" height="304" key="GridCell.Tab.0.center" timestamp="1588993922967">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="554" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588675778558" />
+    <state width="1877" height="304" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588993922967" />
     <state width="1877" height="453" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1588385723848" />
-    <state width="1877" height="554" key="GridCell.Tab.0.left" timestamp="1588675778558">
+    <state width="1877" height="304" key="GridCell.Tab.0.left" timestamp="1588993922967">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="554" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588675778558" />
+    <state width="1877" height="304" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588993922967" />
     <state width="1877" height="453" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1588385723848" />
-    <state width="1877" height="554" key="GridCell.Tab.0.right" timestamp="1588675778558">
+    <state width="1877" height="304" key="GridCell.Tab.0.right" timestamp="1588993922967">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="554" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588675778558" />
+    <state width="1877" height="304" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588993922967" />
     <state width="1877" height="453" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1588385723848" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1588384180504">
+    <state width="1877" height="337" key="GridCell.Tab.1.bottom" timestamp="1588980074367">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588384180504" />
+    <state width="1877" height="337" key="GridCell.Tab.1.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588980074367" />
+    <state width="1877" height="337" key="GridCell.Tab.1.center" timestamp="1588980074367">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="337" key="GridCell.Tab.1.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588980074367" />
+    <state width="1877" height="337" key="GridCell.Tab.1.left" timestamp="1588980074367">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="337" key="GridCell.Tab.1.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588980074367" />
+    <state width="1877" height="337" key="GridCell.Tab.1.right" timestamp="1588980074367">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="337" key="GridCell.Tab.1.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588980074367" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1588956176983">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588956176983" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/zerobank/stepdefnitions/AccountActivityStepDefinitions.java</url>
+          <line>123</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/zerobank/stepdefnitions/AccountActivityStepDefinitions.java</url>
+          <line>134</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/zerobank/stepdefnitions/AccountActivityStepDefinitions.java</url>
+          <line>133</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
