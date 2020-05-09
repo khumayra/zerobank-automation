@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 997500,
+              "duration": 1993500,
               "status": "skipped"
             },
             "line": 6,
@@ -23,7 +23,6 @@
           },
           {
             "result": {
-              "duration": 997400,
               "status": "skipped"
             },
             "line": 7,
@@ -38,11 +37,11 @@
               "status": "skipped"
             },
             "line": 8,
-            "name": "user navigates to \"Pay Bills\" page",
+            "name": "user navigates to \"Online Statements\" page",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Pay Bills\"",
+                  "val": "\"Online Statements\"",
                   "offset": 18
                 }
               ],
@@ -55,22 +54,22 @@
               "status": "undefined"
             },
             "line": 9,
-            "name": "user accesses the Purchase foreign currency cash tab",
+            "name": "the user accesses the Statements \u0026 Documents tab",
             "match": {},
-            "keyword": "And "
+            "keyword": "Given "
           }
         ]
       },
       {
-        "start_timestamp": "2020-05-09T04:53:31.083Z",
-        "line": 11,
-        "name": "Available currencies",
+        "start_timestamp": "2020-05-09T05:59:42.652Z",
+        "line": 16,
+        "name": "Recent 2 statements per 2009 year",
         "description": "",
-        "id": "purchase-foreign-currency;available-currencies",
+        "id": "statements-and-documents-details;recent-\u003ccount\u003e-statements-per-\u003cyear\u003e-year;;2",
         "after": [
           {
             "result": {
-              "duration": 997200,
+              "duration": 996900,
               "status": "skipped"
             },
             "match": {
@@ -79,83 +78,30 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
               "status": "undefined"
             },
             "line": 12,
-            "name": "following currencies should be available",
+            "name": "the user selects the Recent Statements Year \"2009\"",
             "match": {},
-            "rows": [
-              {
-                "cells": [
-                  "Australia (dollar)"
-                ]
-              },
-              {
-                "cells": [
-                  "Canada (dollar)"
-                ]
-              },
-              {
-                "cells": [
-                  "Switzerland (franc)"
-                ]
-              },
-              {
-                "cells": [
-                  "China (yuan)"
-                ]
-              },
-              {
-                "cells": [
-                  "Denmark (krone)"
-                ]
-              },
-              {
-                "cells": [
-                  "Eurozone (euro)"
-                ]
-              },
-              {
-                "cells": [
-                  "Great Britain (pound)"
-                ]
-              },
-              {
-                "cells": [
-                  "Japan (yen)"
-                ]
-              },
-              {
-                "cells": [
-                  "Mexico (peso)"
-                ]
-              },
-              {
-                "cells": [
-                  "Norway (krone)"
-                ]
-              },
-              {
-                "cells": [
-                  "New Zealand (dollar)"
-                ]
-              },
-              {
-                "cells": [
-                  "Singapore (dollar)"
-                ]
-              }
-            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "\"2\" statements should be displayed for that year",
+            "match": {},
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@purchase_foreign_currency"
+            "name": "@statements_and_documents_details"
           }
         ]
       },
@@ -179,6 +125,7 @@
           },
           {
             "result": {
+              "duration": 997500,
               "status": "skipped"
             },
             "line": 7,
@@ -193,11 +140,11 @@
               "status": "skipped"
             },
             "line": 8,
-            "name": "user navigates to \"Pay Bills\" page",
+            "name": "user navigates to \"Online Statements\" page",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Pay Bills\"",
+                  "val": "\"Online Statements\"",
                   "offset": 18
                 }
               ],
@@ -210,18 +157,18 @@
               "status": "undefined"
             },
             "line": 9,
-            "name": "user accesses the Purchase foreign currency cash tab",
+            "name": "the user accesses the Statements \u0026 Documents tab",
             "match": {},
-            "keyword": "And "
+            "keyword": "Given "
           }
         ]
       },
       {
-        "start_timestamp": "2020-05-09T04:53:31.150Z",
-        "line": 26,
-        "name": "Error message for not selecting currency",
+        "start_timestamp": "2020-05-09T05:59:42.733Z",
+        "line": 17,
+        "name": "Recent 2 statements per 2010 year",
         "description": "",
-        "id": "purchase-foreign-currency;error-message-for-not-selecting-currency",
+        "id": "statements-and-documents-details;recent-\u003ccount\u003e-statements-per-\u003cyear\u003e-year;;3",
         "after": [
           {
             "result": {
@@ -233,14 +180,14 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
               "status": "undefined"
             },
-            "line": 27,
-            "name": "user tries to calculate cost without selecting a currency",
+            "line": 12,
+            "name": "the user selects the Recent Statements Year \"2010\"",
             "match": {},
             "keyword": "When "
           },
@@ -248,15 +195,15 @@
             "result": {
               "status": "undefined"
             },
-            "line": 28,
-            "name": "error message should be displayed",
+            "line": 13,
+            "name": "\"2\" statements should be displayed for that year",
             "match": {},
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@purchase_foreign_currency"
+            "name": "@statements_and_documents_details"
           }
         ]
       },
@@ -292,15 +239,15 @@
           },
           {
             "result": {
-              "duration": 997200,
+              "duration": 998800,
               "status": "skipped"
             },
             "line": 8,
-            "name": "user navigates to \"Pay Bills\" page",
+            "name": "user navigates to \"Online Statements\" page",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Pay Bills\"",
+                  "val": "\"Online Statements\"",
                   "offset": 18
                 }
               ],
@@ -313,18 +260,462 @@
               "status": "undefined"
             },
             "line": 9,
-            "name": "user accesses the Purchase foreign currency cash tab",
+            "name": "the user accesses the Statements \u0026 Documents tab",
             "match": {},
-            "keyword": "And "
+            "keyword": "Given "
           }
         ]
       },
       {
-        "start_timestamp": "2020-05-09T04:53:31.165Z",
+        "start_timestamp": "2020-05-09T05:59:42.752Z",
+        "line": 18,
+        "name": "Recent 2 statements per 2011 year",
+        "description": "",
+        "id": "statements-and-documents-details;recent-\u003ccount\u003e-statements-per-\u003cyear\u003e-year;;4",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefnitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "the user selects the Recent Statements Year \"2011\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "\"2\" statements should be displayed for that year",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@statements_and_documents_details"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "open login page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user is on login page",
+            "match": {
+              "location": "com.zerobank.stepdefnitions.LoginStepDefinitions.user_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 997200,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user logs in with valid credentials",
+            "match": {
+              "location": "com.zerobank.stepdefnitions.LoginStepDefinitions.user_logs_in_with_valid_credentials()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user navigates to \"Online Statements\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Online Statements\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.user_navigates_to_page(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "the user accesses the Statements \u0026 Documents tab",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-09T05:59:42.766Z",
+        "line": 19,
+        "name": "Recent 1 statements per 2012 year",
+        "description": "",
+        "id": "statements-and-documents-details;recent-\u003ccount\u003e-statements-per-\u003cyear\u003e-year;;5",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefnitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "the user selects the Recent Statements Year \"2012\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "\"1\" statements should be displayed for that year",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@statements_and_documents_details"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "open login page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user is on login page",
+            "match": {
+              "location": "com.zerobank.stepdefnitions.LoginStepDefinitions.user_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 996300,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user logs in with valid credentials",
+            "match": {
+              "location": "com.zerobank.stepdefnitions.LoginStepDefinitions.user_logs_in_with_valid_credentials()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user navigates to \"Online Statements\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Online Statements\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.user_navigates_to_page(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "the user accesses the Statements \u0026 Documents tab",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-09T05:59:42.785Z",
+        "line": 28,
+        "name": "Download statements",
+        "description": "",
+        "id": "statements-and-documents-details;download-statements;;2",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefnitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 22,
+            "name": "the user selects the Recent Statements Year \"2009\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 23,
+            "name": "the user clicks on statement \"Statement 31/11/09(57K)\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 24,
+            "name": "the downloaded file name should contain \"31-11-09\"",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 25,
+            "name": "the file type should be pdf",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@statements_and_documents_details"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "open login page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 997300,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user is on login page",
+            "match": {
+              "location": "com.zerobank.stepdefnitions.LoginStepDefinitions.user_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 997500,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user logs in with valid credentials",
+            "match": {
+              "location": "com.zerobank.stepdefnitions.LoginStepDefinitions.user_logs_in_with_valid_credentials()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user navigates to \"Online Statements\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Online Statements\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.user_navigates_to_page(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "the user accesses the Statements \u0026 Documents tab",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-09T05:59:42.814Z",
+        "line": 29,
+        "name": "Download statements",
+        "description": "",
+        "id": "statements-and-documents-details;download-statements;;3",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefnitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 22,
+            "name": "the user selects the Recent Statements Year \"2010\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 23,
+            "name": "the user clicks on statement \"Statement 01/12/10(57K)\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 24,
+            "name": "the downloaded file name should contain \"01-12-10\"",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 25,
+            "name": "the file type should be pdf",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@statements_and_documents_details"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "open login page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user is on login page",
+            "match": {
+              "location": "com.zerobank.stepdefnitions.LoginStepDefinitions.user_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user logs in with valid credentials",
+            "match": {
+              "location": "com.zerobank.stepdefnitions.LoginStepDefinitions.user_logs_in_with_valid_credentials()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user navigates to \"Online Statements\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Online Statements\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.user_navigates_to_page(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "the user accesses the Statements \u0026 Documents tab",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-09T05:59:42.836Z",
         "line": 30,
-        "name": "Error message for not entering value",
+        "name": "Download statements",
         "description": "",
-        "id": "purchase-foreign-currency;error-message-for-not-entering-value",
+        "id": "statements-and-documents-details;download-statements;;4",
         "after": [
           {
             "result": {
@@ -336,14 +727,23 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
               "status": "undefined"
             },
-            "line": 31,
-            "name": "user tries to calculate cost without entering a value",
+            "line": 22,
+            "name": "the user selects the Recent Statements Year \"2011\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 23,
+            "name": "the user clicks on statement \"Statement 05/12/11(57K)\"",
             "match": {},
             "keyword": "When "
           },
@@ -351,27 +751,156 @@
             "result": {
               "status": "undefined"
             },
-            "line": 32,
-            "name": "error message should be displayed",
+            "line": 24,
+            "name": "the downloaded file name should contain \"05-12-11\"",
             "match": {},
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 25,
+            "name": "the file type should be pdf",
+            "match": {},
+            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@purchase_foreign_currency"
+            "name": "@statements_and_documents_details"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "open login page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 997700,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user is on login page",
+            "match": {
+              "location": "com.zerobank.stepdefnitions.LoginStepDefinitions.user_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user logs in with valid credentials",
+            "match": {
+              "location": "com.zerobank.stepdefnitions.LoginStepDefinitions.user_logs_in_with_valid_credentials()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user navigates to \"Online Statements\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Online Statements\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.user_navigates_to_page(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "the user accesses the Statements \u0026 Documents tab",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-09T05:59:42.847Z",
+        "line": 31,
+        "name": "Download statements",
+        "description": "",
+        "id": "statements-and-documents-details;download-statements;;5",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefnitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 22,
+            "name": "the user selects the Recent Statements Year \"2012\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 23,
+            "name": "the user clicks on statement \"Statement 01/10/12(57K)\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 24,
+            "name": "the downloaded file name should contain \"01-10-12\"",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 25,
+            "name": "the file type should be pdf",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@statements_and_documents_details"
           }
         ]
       }
     ],
-    "name": "Purchase Foreign Currency",
-    "description": "  As a user, I want to purchase foreign currency",
-    "id": "purchase-foreign-currency",
+    "name": "Statements and Documents details",
+    "description": "  as a user, I want to see and download Statements \u0026 Documents",
+    "id": "statements-and-documents-details",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/PurchaseForeignCurrency.feature",
+    "uri": "file:src/test/resources/features/StatementsAndDocuments.feature",
     "tags": [
       {
-        "name": "@purchase_foreign_currency",
+        "name": "@statements_and_documents_details",
         "type": "Tag",
         "location": {
           "line": 1,
