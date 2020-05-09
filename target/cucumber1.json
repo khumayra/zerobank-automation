@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "line": 4,
+        "line": 5,
         "name": "open login page",
         "description": "",
         "type": "background",
@@ -11,10 +11,10 @@
         "steps": [
           {
             "result": {
-              "duration": 1992800,
+              "duration": 1995100,
               "status": "skipped"
             },
-            "line": 5,
+            "line": 6,
             "name": "user is on login page",
             "match": {
               "location": "com.zerobank.stepdefnitions.LoginStepDefinitions.user_on_login_page()"
@@ -23,10 +23,10 @@
           },
           {
             "result": {
-              "duration": 997000,
+              "duration": 997500,
               "status": "skipped"
             },
-            "line": 6,
+            "line": 7,
             "name": "user logs in with valid credentials",
             "match": {
               "location": "com.zerobank.stepdefnitions.LoginStepDefinitions.user_logs_in_with_valid_credentials()"
@@ -35,51 +35,33 @@
           },
           {
             "result": {
-              "duration": 998200,
+              "duration": 996900,
               "status": "skipped"
             },
-            "line": 7,
-            "name": "user navigates to \"Account Activity\" page",
+            "line": 8,
+            "name": "user navigates to \"Pay Bills\" page",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Account Activity\"",
+                  "val": "\"Pay Bills\"",
                   "offset": 18
                 }
               ],
               "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.user_navigates_to_page(java.lang.String)"
             },
             "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 8,
-            "name": "the user accesses the \"Find Transactions\" tab",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Find Transactions\"",
-                  "offset": 22
-                }
-              ],
-              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.the_user_accesses_the_tab(java.lang.String)"
-            },
-            "keyword": "And "
           }
         ]
       },
       {
-        "start_timestamp": "2020-05-08T13:39:24.828Z",
+        "start_timestamp": "2020-05-09T03:21:58.950Z",
         "line": 10,
-        "name": "Search date range",
+        "name": "Add a new payee",
         "description": "",
-        "id": "find-transactions-in-account-activity;search-date-range",
+        "id": "add-new-payee-under-pay-bills;add-a-new-payee",
         "after": [
           {
             "result": {
-              "duration": 998400,
               "status": "skipped"
             },
             "match": {
@@ -95,54 +77,40 @@
               "status": "undefined"
             },
             "line": 11,
-            "name": "the user enters date range from “abc” to “abc”",
+            "name": "Add New Payee tab",
             "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 12,
-            "name": "clicks search",
-            "match": {
-              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.clicks_search()"
-            },
-            "keyword": "And "
+            "keyword": "Given "
           },
           {
             "result": {
               "status": "undefined"
             },
-            "line": 13,
-            "name": "results table should only show transactions dates between “anbc” to “abc”",
+            "line": 12,
+            "name": "creates new payee using following information",
             "match": {},
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 997400,
-              "status": "skipped"
-            },
-            "line": 14,
-            "name": "the results should be sorted by most recent date",
-            "match": {
-              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.the_results_should_be_sorted_by_most_recent_date(io.cucumber.datatable.DataTable)"
-            },
             "rows": [
               {
                 "cells": [
-                  "2012-09-06"
+                  "Payee Name",
+                  "The Law Offices of Hyde, Price \u0026 Scharks"
                 ]
               },
               {
                 "cells": [
-                  "2012-09-05"
+                  "Payee Address",
+                  "100 Same st, Anytown, USA, 10001"
                 ]
               },
               {
                 "cells": [
-                  "2012-09-01"
+                  "Account",
+                  "Checking"
+                ]
+              },
+              {
+                "cells": [
+                  "Payee details",
+                  "XYZ account"
                 ]
               }
             ],
@@ -152,589 +120,27 @@
             "result": {
               "status": "undefined"
             },
-            "line": 19,
-            "name": "the user enters date range from “abc” to “abc”",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 997800,
-              "status": "skipped"
-            },
-            "line": 20,
-            "name": "clicks search",
-            "match": {
-              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.clicks_search()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 21,
-            "name": "results table should only show transactions dates between “abc” to “abc”",
+            "line": 17,
+            "name": "message The new payee The Law Offices of Hyde, Price \u0026 Scharks was successfully created. should be displayed",
             "match": {},
             "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 22,
-            "name": "the results table should only NOT contain transactions dated “abc”",
-            "match": {},
-            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@find_transactions_in_account_activity"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "open login page",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 5,
-            "name": "user is on login page",
-            "match": {
-              "location": "com.zerobank.stepdefnitions.LoginStepDefinitions.user_on_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 6,
-            "name": "user logs in with valid credentials",
-            "match": {
-              "location": "com.zerobank.stepdefnitions.LoginStepDefinitions.user_logs_in_with_valid_credentials()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 7,
-            "name": "user navigates to \"Account Activity\" page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Account Activity\"",
-                  "offset": 18
-                }
-              ],
-              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.user_navigates_to_page(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 8,
-            "name": "the user accesses the \"Find Transactions\" tab",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Find Transactions\"",
-                  "offset": 22
-                }
-              ],
-              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.the_user_accesses_the_tab(java.lang.String)"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-05-08T13:39:24.918Z",
-        "line": 24,
-        "name": "Search description",
-        "description": "",
-        "id": "find-transactions-in-account-activity;search-description",
-        "after": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "match": {
-              "location": "com.zerobank.stepdefnitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 997700,
-              "status": "skipped"
-            },
-            "line": 25,
-            "name": "the user enters description “ONLINE”",
-            "match": {
-              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.the_user_enters_description_ONLINE()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 26,
-            "name": "clicks search",
-            "match": {
-              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.clicks_search()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 27,
-            "name": "results table should only show descriptions containing “ONLINE”",
-            "match": {
-              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.results_table_should_only_show_descriptions_containing_ONLINE()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 28,
-            "name": "the user enters description “OFFICE”",
-            "match": {
-              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.the_user_enters_description_OFFICE()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 2991900,
-              "status": "skipped"
-            },
-            "line": 29,
-            "name": "clicks search",
-            "match": {
-              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.clicks_search()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 997800,
-              "status": "skipped"
-            },
-            "line": 30,
-            "name": "results table should only show descriptions containing “OFFICE”",
-            "match": {
-              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.results_table_should_only_show_descriptions_containing_OFFICE()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 31,
-            "name": "results table should NOT show descriptions containing “ONLINE”",
-            "match": {
-              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.results_table_should_NOT_show_descriptions_containing_ONLINE()"
-            },
-            "keyword": "But "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@find_transactions_in_account_activity"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "open login page",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 997900,
-              "status": "skipped"
-            },
-            "line": 5,
-            "name": "user is on login page",
-            "match": {
-              "location": "com.zerobank.stepdefnitions.LoginStepDefinitions.user_on_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 998200,
-              "status": "skipped"
-            },
-            "line": 6,
-            "name": "user logs in with valid credentials",
-            "match": {
-              "location": "com.zerobank.stepdefnitions.LoginStepDefinitions.user_logs_in_with_valid_credentials()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 7,
-            "name": "user navigates to \"Account Activity\" page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Account Activity\"",
-                  "offset": 18
-                }
-              ],
-              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.user_navigates_to_page(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 997100,
-              "status": "skipped"
-            },
-            "line": 8,
-            "name": "the user accesses the \"Find Transactions\" tab",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Find Transactions\"",
-                  "offset": 22
-                }
-              ],
-              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.the_user_accesses_the_tab(java.lang.String)"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-05-08T13:39:24.939Z",
-        "line": 33,
-        "name": "Search description case insensitive",
-        "description": "",
-        "id": "find-transactions-in-account-activity;search-description-case-insensitive",
-        "after": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "match": {
-              "location": "com.zerobank.stepdefnitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 997400,
-              "status": "skipped"
-            },
-            "line": 34,
-            "name": "the user enters description “ONLINE”",
-            "match": {
-              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.the_user_enters_description_ONLINE()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 998300,
-              "status": "skipped"
-            },
-            "line": 35,
-            "name": "clicks search",
-            "match": {
-              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.clicks_search()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 36,
-            "name": "results table should only show descriptions containing “ONLINE”",
-            "match": {
-              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.results_table_should_only_show_descriptions_containing_ONLINE()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 37,
-            "name": "the user enters description “online”",
-            "match": {
-              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.the_user_enters_description_online()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 998300,
-              "status": "skipped"
-            },
-            "line": 38,
-            "name": "clicks search",
-            "match": {
-              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.clicks_search()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 996900,
-              "status": "skipped"
-            },
-            "line": 39,
-            "name": "results table should only show descriptions containing “ONLINE”",
-            "match": {
-              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.results_table_should_only_show_descriptions_containing_ONLINE()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@find_transactions_in_account_activity"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "open login page",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 997800,
-              "status": "skipped"
-            },
-            "line": 5,
-            "name": "user is on login page",
-            "match": {
-              "location": "com.zerobank.stepdefnitions.LoginStepDefinitions.user_on_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 6,
-            "name": "user logs in with valid credentials",
-            "match": {
-              "location": "com.zerobank.stepdefnitions.LoginStepDefinitions.user_logs_in_with_valid_credentials()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 996600,
-              "status": "skipped"
-            },
-            "line": 7,
-            "name": "user navigates to \"Account Activity\" page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Account Activity\"",
-                  "offset": 18
-                }
-              ],
-              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.user_navigates_to_page(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 8,
-            "name": "the user accesses the \"Find Transactions\" tab",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Find Transactions\"",
-                  "offset": 22
-                }
-              ],
-              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.the_user_accesses_the_tab(java.lang.String)"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-05-08T13:39:24.962Z",
-        "line": 41,
-        "name": "Type",
-        "description": "",
-        "id": "find-transactions-in-account-activity;type",
-        "after": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "match": {
-              "location": "com.zerobank.stepdefnitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 2993000,
-              "status": "skipped"
-            },
-            "line": 42,
-            "name": "clicks search",
-            "match": {
-              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.clicks_search()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 43,
-            "name": "results table should show at least one result under Deposit",
-            "match": {
-              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.results_table_should_show_at_least_one_result_under_Deposit()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 997500,
-              "status": "skipped"
-            },
-            "line": 44,
-            "name": "results table should show at least one result under Withdrawal",
-            "match": {
-              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.results_table_should_show_at_least_one_result_under_Withdrawal()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 45,
-            "name": "user selects type “Deposit”",
-            "match": {
-              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.user_selects_type_Deposit()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 997100,
-              "status": "skipped"
-            },
-            "line": 46,
-            "name": "results table should show at least one result under Deposit",
-            "match": {
-              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.results_table_should_show_at_least_one_result_under_Deposit()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 47,
-            "name": "results table should show no result under Withdrawal",
-            "match": {
-              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.results_table_should_show_no_result_under_Withdrawal()"
-            },
-            "keyword": "But "
-          },
-          {
-            "result": {
-              "duration": 997000,
-              "status": "skipped"
-            },
-            "line": 48,
-            "name": "user selects type “Withdrawal”",
-            "match": {
-              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.user_selects_type_Withdrawal()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 49,
-            "name": "results table should show at least one result under Withdrawal",
-            "match": {
-              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.results_table_should_show_at_least_one_result_under_Withdrawal()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 997500,
-              "status": "skipped"
-            },
-            "line": 50,
-            "name": "results table should show no result under Deposit",
-            "match": {
-              "location": "com.zerobank.stepdefnitions.AccountActivityStepDefinitions.results_table_should_show_no_result_under_Deposit()"
-            },
-            "keyword": "But "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@find_transactions_in_account_activity"
+            "name": "@add_payee"
           }
         ]
       }
     ],
-    "name": "Find Transactions in Account Activity",
-    "description": "",
-    "id": "find-transactions-in-account-activity",
+    "name": "Add new payee under pay bills",
+    "description": "  As a user, I want to add payees",
+    "id": "add-new-payee-under-pay-bills",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/FindTransactions.feature",
+    "uri": "file:src/test/resources/features/AddNewPayee.feature",
     "tags": [
       {
-        "name": "@find_transactions_in_account_activity",
+        "name": "@add_payee",
         "type": "Tag",
         "location": {
           "line": 1,

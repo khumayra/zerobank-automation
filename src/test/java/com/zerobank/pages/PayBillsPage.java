@@ -10,6 +10,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 
+import java.util.Map;
+
 public class PayBillsPage extends BasePage {
 
     @FindBy(id = "sp_payee")
@@ -33,9 +35,27 @@ public class PayBillsPage extends BasePage {
     @FindBy (xpath = "//span[contains(@title,'payed to payee')]")
     private WebElement paymentSubmissionMsg;
 
+    @FindBy (id = "np_new_payee_name")
+    private WebElement newPayeeName;
+
+    @FindBy (id = "np_new_payee_address")
+    private WebElement newPayeeAddress;
+
+    @FindBy (id="np_new_payee_account")
+    private WebElement newPayeeAccount;
+
+    @FindBy (id ="np_new_payee_details")
+    private WebElement newPayeeDetails;
+
+    @FindBy (id ="add_new_payee" )
+    private WebElement addButton;
+
+    @FindBy (id ="alert_content")
+    private WebElement payeeAddedMsg;
+
     public PayBillsPage navigateToPayBillsTabs(String tabName){
         BrowserUtils.waitForPageToLoad(25);
-        String xpath = "//li[@class='ui-state-default ui-corner-top ui-tabs-selected ui-state-active']/a[text()='"+tabName+"']";
+        String xpath = "//div[@id='tabs']//a[text()='"+tabName+"']";
         WebElement tabElement = driver.findElement(By.xpath(xpath));
         wait.until(ExpectedConditions.visibilityOf(tabElement));
         Actions actions = new Actions(driver);
@@ -90,6 +110,32 @@ public class PayBillsPage extends BasePage {
 
     public String getSubmissionMsg (){
         return wait.until(ExpectedConditions.visibilityOf(paymentSubmissionMsg)).getText();
+    }
+
+    public void clickOnAddButton(){
+        wait.until(ExpectedConditions.visibilityOf(addButton)).click();
+    }
+
+    public PayBillsPage addPayeeName(String name){
+        wait.until(ExpectedConditions.visibilityOf(newPayeeName)).sendKeys(name);
+        return this;
+    }
+    public PayBillsPage addPayeeAddress(String address){
+        wait.until(ExpectedConditions.visibilityOf(newPayeeAddress)).sendKeys(address);
+        return this;
+    }
+    public PayBillsPage addPayeeAccount (String account){
+        wait.until(ExpectedConditions.visibilityOf(newPayeeAccount)).sendKeys(account);
+        return this;
+    }
+
+    public PayBillsPage addPayeeDetails (String details){
+        wait.until(ExpectedConditions.visibilityOf(newPayeeDetails)).sendKeys(details);
+        return this;
+    }
+
+    public String getPayeeAddedMsg(){
+        return wait.until(ExpectedConditions.visibilityOf(payeeAddedMsg)).getText();
     }
 
 }

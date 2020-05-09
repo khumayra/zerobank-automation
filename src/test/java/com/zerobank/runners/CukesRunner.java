@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         dryRun = true,
         strict = false,
-        tags = "@find_transactions_in_account_activity",
+        tags = "@add_payee",
         plugin = {
                 "html:target/default-report",
                 "json:target/cucumber1.json",
