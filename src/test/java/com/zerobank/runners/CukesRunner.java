@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         dryRun = true,
         strict = false,
-        tags = "@add_payee",
+        tags = "@purchase_foreign_currency",
         plugin = {
                 "html:target/default-report",
                 "json:target/cucumber1.json",

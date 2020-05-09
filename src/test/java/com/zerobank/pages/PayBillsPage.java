@@ -1,7 +1,6 @@
 package com.zerobank.pages;
 
 import com.zerobank.utilities.BrowserUtils;
-import io.cucumber.java.en.Then;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -10,9 +9,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 
-import java.util.Map;
+import java.util.List;
 
 public class PayBillsPage extends BasePage {
+    private Select select;
+    private Alert alert;
 
     @FindBy(id = "sp_payee")
     private WebElement payeeDropDown;
@@ -52,6 +53,18 @@ public class PayBillsPage extends BasePage {
 
     @FindBy (id ="alert_content")
     private WebElement payeeAddedMsg;
+
+    @FindBy (id="pc_currency")
+    private WebElement currencyOptions;
+
+    @FindBy (id = "pc_amount")
+    private WebElement currencyAmount;
+
+    @FindBy (id = "purchase_cash")
+    private WebElement purchaseBtn;
+
+    @FindBy (id = "pc_calculate_costs")
+    private WebElement calculateCostsBtn;
 
     public PayBillsPage navigateToPayBillsTabs(String tabName){
         BrowserUtils.waitForPageToLoad(25);
@@ -136,6 +149,34 @@ public class PayBillsPage extends BasePage {
 
     public String getPayeeAddedMsg(){
         return wait.until(ExpectedConditions.visibilityOf(payeeAddedMsg)).getText();
+    }
+
+    public List<String> getAllCurrencyOptions(){
+        select = new Select(currencyOptions);
+        return BrowserUtils.getTextFromWebElements(select.getOptions());
+    }
+
+    public PayBillsPage addCurrencyAmount(String amount){
+        wait.until(ExpectedConditions.visibilityOf(currencyAmount)).sendKeys(amount);
+        return this;
+    }
+
+    public void clickOnPurchaseBtn (){
+        wait.until(ExpectedConditions.visibilityOf(purchaseBtn)).click();
+    }
+
+    public String purchaseForeignCurrencyAlert(){
+      alert = wait.until(ExpectedConditions.alertIsPresent());
+        if (alert!=null){
+            System.out.println("Alert is present");
+            return driver.switchTo().alert().getText();
+        } else {
+            return "Alert is not present";
+        }
+    }
+
+    public void clickOnCalculateCostsBtn(){
+        wait.until(ExpectedConditions.visibilityOf(calculateCostsBtn)).click();
     }
 
 }

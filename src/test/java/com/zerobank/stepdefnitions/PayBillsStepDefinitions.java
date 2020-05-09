@@ -89,5 +89,24 @@ public class PayBillsStepDefinitions {
     public void message_The_new_payee_The_Law_Offices_of_Hyde_Price_Scharks_was_successfully_created_should_be_displayed() {
         Assert.assertTrue(payBillsPage.getPayeeAddedMsg().contains("The new payee The Law Offices of Hyde, Price & Scharks was successfully created."));
     }
+    @Then("following currencies should be available")
+    public void following_currencies_should_be_available(List<String> dataTable) {
+        Assert.assertNotEquals(dataTable, payBillsPage.getAllCurrencyOptions());
+    }
+
+    @When("user tries to calculate cost without selecting a currency")
+    public void user_tries_to_calculate_cost_without_selecting_a_currency() {
+       payBillsPage.clickOnCalculateCostsBtn();
+    }
+
+    @Then("error message should be displayed {string}")
+    public void error_message_should_be_displayed(String string) {
+      Assert.assertEquals(string,payBillsPage.purchaseForeignCurrencyAlert());
+    }
+
+    @When("user tries to calculate cost without entering a value")
+    public void user_tries_to_calculate_cost_without_entering_a_value() {
+        payBillsPage.clickOnCalculateCostsBtn();
+    }
 
 }

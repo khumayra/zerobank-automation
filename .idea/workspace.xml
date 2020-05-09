@@ -3,12 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="419841f0-2c6c-455b-a354-7f6266c46e8d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/pages/PayBillsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/pages/PayBillsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/runners/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/runners/CukesRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/stepdefnitions/PayBillsStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/stepdefnitions/PayBillsStepDefinitions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber1.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber1.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/default-report/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-report/report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/pages/PayBillsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/zerobank/pages/PayBillsPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/runners/CukesRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/zerobank/runners/CukesRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/stepdefnitions/PayBillsStepDefinitions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/zerobank/stepdefnitions/PayBillsStepDefinitions.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +39,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Fall2019OnlineCucumberSelenium" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: AddNewPayee">
+  <component name="RunManager" selected="Cucumber Java.Feature: PurchaseForeignCurrency">
     <configuration name="Feature: AddNewPayee" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/AddNewPayee.feature" />
@@ -76,15 +78,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Search description &quot;OFFICE&quot; - Negative" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: PurchaseForeignCurrency" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/FindTransactions.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/PurchaseForeignCurrency.feature" />
       <option name="GLUE" value="com.zerobank.stepdefnitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="zerobank-automation" />
-      <option name="NAME_FILTER" value="^Search description \&quot;OFFICE\&quot; \- Negative$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Search description \&quot;OFFICE\&quot; \- Negative$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Search description &quot;OFFICE&quot; - Negative" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: PurchaseForeignCurrency" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -133,11 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Feature: AddNewPayee" />
+        <item itemvalue="Cucumber Java.Feature: PurchaseForeignCurrency" />
         <item itemvalue="JUnit.CukesRunner" />
+        <item itemvalue="Cucumber Java.Feature: AddNewPayee" />
         <item itemvalue="Cucumber Java.Feature: FindTransactions" />
         <item itemvalue="Cucumber Java.Scenario: Type" />
-        <item itemvalue="Cucumber Java.Scenario: Search description &quot;OFFICE&quot; - Negative" />
       </list>
     </recent_temporary>
   </component>
@@ -163,6 +164,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="87" y="100" width="1720" height="840" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588421589429" />
+    <state x="765" y="224" key="#com.intellij.ide.util.MemberChooser" timestamp="1589001148656">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="224" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589001148656" />
     <state x="736" y="384" width="447" height="279" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1588314531761">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -171,25 +176,25 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588392204851" />
-    <state width="1877" height="485" key="GridCell.Tab.0.bottom" timestamp="1588998265440">
+    <state width="1877" height="505" key="GridCell.Tab.0.bottom" timestamp="1589002429371">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="485" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588998265440" />
+    <state width="1877" height="505" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589002429371" />
     <state width="1877" height="453" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1588385723848" />
-    <state width="1877" height="485" key="GridCell.Tab.0.center" timestamp="1588998265440">
+    <state width="1877" height="505" key="GridCell.Tab.0.center" timestamp="1589002429371">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="485" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588998265440" />
+    <state width="1877" height="505" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589002429371" />
     <state width="1877" height="453" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1588385723848" />
-    <state width="1877" height="485" key="GridCell.Tab.0.left" timestamp="1588998265440">
+    <state width="1877" height="505" key="GridCell.Tab.0.left" timestamp="1589002429371">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="485" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588998265440" />
+    <state width="1877" height="505" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589002429371" />
     <state width="1877" height="453" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1588385723848" />
-    <state width="1877" height="485" key="GridCell.Tab.0.right" timestamp="1588998265440">
+    <state width="1877" height="505" key="GridCell.Tab.0.right" timestamp="1589002429371">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="485" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588998265440" />
+    <state width="1877" height="505" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589002429371" />
     <state width="1877" height="453" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1588385723848" />
     <state width="1877" height="485" key="GridCell.Tab.1.bottom" timestamp="1588998265440">
       <screen x="0" y="0" width="1920" height="1040" />
